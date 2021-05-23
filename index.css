@@ -21,7 +21,7 @@ body{
     font-weight: bold;
     background: #fff;
 }
-.btn{
+.button, .equals, .sqrt{
     height: 80px;
     font-size: 20px;
     font-weight: bold;
@@ -30,10 +30,10 @@ body{
     border: none;
     border-radius: 0%;
 }
-.btn:hover{
+.button:hover ,.equals:hover, .sqrt:hover{
     color: #fff; 
 }
-.btn:focus{
+.button:focus, .equals:focus, .sqrt:focus{
     outline: none;
     box-shadow: none;
 }
@@ -43,6 +43,10 @@ footer{
     font-weight: bolder;
     color: #000;
     font-family: 'Courier New', Courier, monospace;
+}
+span{
+    padding-right: 5px;
+    font-size: 25px;
 }
 @media (max-width:700px) {
     .container{

@@ -9,11 +9,18 @@ $(document).ready(function(){
         screen = ""
     });
     $(".equals").click(function(){
-        let res = eval(screen);
-        screen = res;
-        $(".screen").html(eval(screen));
+        try{
+            let res = eval(screen);
+            screen = res;
+            $(".screen").html(eval(screen));
+        }
+        catch(err){
+            $(".screen").html("Syntax Error!");
+        }
+        
     });
     $(".sqrt").click(function(){
         $(".screen").html(Math.sqrt(eval(screen)));
-    })
+    });
+    $(".erase").addClass("btn-danger");
 });
