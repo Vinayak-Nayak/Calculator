@@ -20,7 +20,13 @@ $(document).ready(function(){
         
     });
     $(".sqrt").click(function(){
-        $(".screen").html(Math.sqrt(eval(screen)));
+        screen = Math.sqrt(eval(screen));
+        if(isNaN(screen)){
+            $(".screen").html(0);
+        }
+        else{
+            $(".screen").html(screen);
+        }
+        
     });
-    $(".erase").addClass("btn-danger");
 });
